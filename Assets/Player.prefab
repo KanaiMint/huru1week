@@ -59,7 +59,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.33, y: -1.94}
+  m_Offset: {x: 2.33, y: -1.93}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -70,7 +70,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.24}
+  m_Size: {x: 1.08, y: 0.27}
   m_EdgeRadius: 0
 --- !u!1 &6147892683838870672
 GameObject:
@@ -251,5 +251,6 @@ MonoBehaviour:
   JumpPower: 5
   IsJump: 0
   HungerLevel: 100
+  MaxHungerLevel: 100
   GroundCheck: {fileID: 6147892683390536519}
   tansan: {fileID: 4471300465930325612, guid: 6892720ee55266943a60bb9d3127b9d7, type: 3}

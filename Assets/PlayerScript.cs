@@ -23,6 +23,7 @@ public class PlayerScript : MonoBehaviour
     {
         Move();
         HungerLevel-=Time.deltaTime*2;
+        HungerLevel=Mathf.Clamp(HungerLevel,0,MaxHungerLevel);
     }
 
     private void Move()
