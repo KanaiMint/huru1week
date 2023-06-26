@@ -8,6 +8,7 @@ TagManager:
   - Water
   - Ninjin
   - Bom
+  - Nojump
   layers:
   - Default
   - TransparentFX
