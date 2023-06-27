@@ -5,8 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class TileScript : MonoBehaviour
 {
-    public TileBase tilegray;
-    public Tilemap tilemap;
+   
     // Start is called before the first frame update
     void Start()
     {

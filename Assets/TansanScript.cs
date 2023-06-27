@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TansanScript : MonoBehaviour
 {
-    public float kLifeTime=3.0f;
+    public float kLifeTime=2.0f;
     private float lifeTime=0;
     private int WaterTime=0;
     public float MoveSpeed = 5.0f;
@@ -32,11 +32,20 @@ public class TansanScript : MonoBehaviour
     private void FixedUpdate()
     {
         WaterTime += 1;
-        if (WaterTime % 4 == 0)
+        if (WaterTime % 3 == 0)
         {
            
            GameObject water1= Instantiate(water, gameObject.transform);
             water1.transform.parent = transform.parent;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Bom"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }
