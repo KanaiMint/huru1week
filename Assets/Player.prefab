@@ -70,7 +70,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.27}
+  m_Size: {x: 0.68, y: 0.27}
   m_EdgeRadius: 0
 --- !u!1 &6147892683838870672
 GameObject:
@@ -254,3 +254,4 @@ MonoBehaviour:
   MaxHungerLevel: 100
   GroundCheck: {fileID: 6147892683390536519}
   tansan: {fileID: 4471300465930325612, guid: 6892720ee55266943a60bb9d3127b9d7, type: 3}
+  GameOver: 0

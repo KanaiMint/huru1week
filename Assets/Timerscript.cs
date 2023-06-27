@@ -10,6 +10,7 @@ public class Timerscript : MonoBehaviour
     public float Time_ = 0;
     public int TimeLimit = 30;
     private TextMeshProUGUI timerText;
+    public bool Clear = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +24,10 @@ public class Timerscript : MonoBehaviour
         int remaining = TimeLimit - (int)Time_;
 
         timerText.text = remaining.ToString("f2");
+        if(remaining <= 0)
+        {
+            Clear = true;
+        }
+        remaining=Mathf.Clamp(remaining, 0, TimeLimit);
     }
 }

@@ -6,6 +6,7 @@ public class SeedsScript : MonoBehaviour
 {
     public float GrowthLevel = 0;
     public GameObject ninjin;
+    public bool isground = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class SeedsScript : MonoBehaviour
             ninjintmp.transform.parent=transform.parent; 
             Destroy(gameObject);
         }
+       
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,5 +31,17 @@ public class SeedsScript : MonoBehaviour
         {
             GrowthLevel += 2;
         }
+        if (collision.CompareTag("Bom"))
+        {
+            Destroy(gameObject);
+        }        
     }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Ground"))
+    //    {
+    //        isground= false;
+    //    }
+    //}
+
 }

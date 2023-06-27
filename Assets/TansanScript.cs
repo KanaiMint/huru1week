@@ -45,7 +45,7 @@ public class TansanScript : MonoBehaviour
         if (collision.CompareTag("Bom"))
         {
             Destroy(collision.gameObject);
-            Destroy(gameObject);
+           // Destroy(gameObject);
         }
     }
 }

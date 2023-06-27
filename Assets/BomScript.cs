@@ -5,24 +5,36 @@ using UnityEngine.Tilemaps;
 
 public class BomScript : MonoBehaviour
 {
+    public float MoveSpeed = 3.0f;
+    private Animator m_Animator;
+    private bool canmove = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_Animator=GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, -3.0f * Time.deltaTime, 0);
-    }
+        if (canmove)
+        {
+            transform.position += new Vector3(0, -MoveSpeed * Time.deltaTime, 0);
 
+        }
+    }
+    private void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Ground")) 
         {
+            canmove = false;
+            m_Animator.SetTrigger("isExploded");
             Destroy(collision.gameObject);
-            Destroy(gameObject);
+           // Destroy(gameObject);
         }
     }
 

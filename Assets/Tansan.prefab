@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f22bb17db8100c4f9fdf5e18816df42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kLifeTime: 3
-  MoveSpeed: 3
+  kLifeTime: 2
+  MoveSpeed: 3.5
   water: {fileID: 3933341853651929902, guid: 59410181c8e447e449e93ab9b8c2bfe5, type: 3}
 --- !u!61 &-8322737028406248667
 BoxCollider2D:
@@ -125,5 +125,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.8}
+  m_Size: {x: 0.56, y: 0.8}
   m_EdgeRadius: 0
