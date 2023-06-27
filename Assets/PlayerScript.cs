@@ -41,6 +41,7 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, JumpPower);
            GameObject Tansan = Instantiate(tansan,transform.position,Quaternion.identity);
             Tansan.transform.parent = transform.parent;
+            GroundCheck.isGrounded = false;
         }
     }
 

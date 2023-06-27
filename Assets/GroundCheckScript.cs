@@ -23,13 +23,13 @@ public class GroundCheckScript : MonoBehaviour
     //        isGrounded = false;
     //    }
     //}
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-    }
+    //private void OnTriggerExit2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Ground"))
+    //    {
+    //        isGrounded = false;
+    //    }
+    //}
 
     private void Update()
     {
